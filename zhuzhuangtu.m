@@ -1,0 +1,36 @@
+wenshi=[9,6,15];
+% wenshi=wenshi/30;
+figure(4);
+a=bar(wenshi,'FaceColor','flat');
+xlabel("纹饰");
+ylabel("风化个数");
+title("各纹饰的风化数");
+set(gca, 'XTicklabel', {'A','B','C'});
+a.CData(1,:) = [40/255,146/255,199/255]; % 普通RGB值除以255，得到的数字就是在MATLAB中颜色的值
+a.CData(2,:) = [129/255,179/255,171/255];
+a.CData(3,:) = [191/255,212/255,138/255];
+leixing=[6,28];
+% leixing=leixing/34;
+figure(2);
+b=bar(leixing,'FaceColor','flat');
+xlabel("类型");
+ylabel("风化个数");
+title("各类型的风化数");
+set(gca, 'XTicklabel', {'高钾','铅钡'});
+b.CData(1,:) = [129/255,179/255,171/255];
+b.CData(2,:) = [191/255,212/255,138/255];
+yanse=[2,9,12,1,4,2];
+%yanse=yanse/30;
+figure(3);
+c=bar(yanse,'FaceColor','flat');
+xlabel("颜色");
+ylabel("风化个数");
+title("各颜色的风化数");
+set(gca, 'XTicklabel', {'黑','蓝绿','浅蓝','浅绿','深绿','紫'});
+c.CData(2,:) = [0/255,131/255,143/255];
+c.CData(3,:) = [193/255,210/255,240/255];
+c.CData(4,:) = [100/255,255/255,100/255];
+c.CData(5,:) = [0/255,100/255,0/255];
+c.CData(6,:) = [153/255,51/255,250/255];
+c.CData(1,:) = [0/255,0/255,0/255];
+
